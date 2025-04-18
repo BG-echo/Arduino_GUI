@@ -10,7 +10,7 @@ void setup()
   size(900, 700, P2D);
   printArray(Serial.list());
   String portName = Serial.list()[2];
-  button = new Button("Start", width - 100, height - 100, color(220), color(180));
+  button = new Button("Start", width/2, height - 100, color(220), color(180));
 
   myPort = new Serial(this, portName, 9600);
   
